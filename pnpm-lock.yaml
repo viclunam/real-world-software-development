@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@slidev/cli':
     specifier: ^0.43.2
-    version: 0.43.2(@types/markdown-it@13.0.1)(postcss@8.4.29)
+    version: 0.43.2(@types/markdown-it@13.0.1)(playwright-chromium@1.37.1)(postcss@8.4.29)
   '@slidev/theme-apple-basic':
     specifier: ^0.20.0
     version: 0.20.0
@@ -22,6 +22,9 @@ devDependencies:
   '@iconify-json/twemoji':
     specifier: ^1.1.12
     version: 1.1.12
+  playwright-chromium:
+    specifier: ^1.37.1
+    version: 1.37.1
 
 packages:
 
@@ -757,7 +760,7 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /@slidev/cli@0.43.2(@types/markdown-it@13.0.1)(postcss@8.4.29):
+  /@slidev/cli@0.43.2(@types/markdown-it@13.0.1)(playwright-chromium@1.37.1)(postcss@8.4.29):
     resolution: {integrity: sha512-vlpnAigNGLBylD+daDXWzamJjgE1sx6VttyyRo9Jb8MzPopfLIR/NpQ+Zah/r4wMH5I1Z22Xtu5N6YtSYyLAvQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
@@ -806,6 +809,7 @@ packages:
       open: 8.4.2
       pdf-lib: 1.17.1
       plantuml-encoder: 1.4.0
+      playwright-chromium: 1.37.1
       postcss-nested: 6.0.1(postcss@8.4.29)
       prismjs: 1.29.0
       prompts: 2.4.2
@@ -3739,6 +3743,19 @@ packages:
   /plantuml-encoder@1.4.0:
     resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==}
     dev: false
+
+  /playwright-chromium@1.37.1:
+    resolution: {integrity: sha512-UMbu6AtNe3vb36VzEoHVTnsBKaPMuHJhzZm5zpBM2DeLN8A/+gTQRQyfSZzuktSSDU22acMKGvc8WU6NIjBFmQ==}
+    engines: {node: '>=16'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      playwright-core: 1.37.1
+
+  /playwright-core@1.37.1:
+    resolution: {integrity: sha512-17EuQxlSIYCmEMwzMqusJ2ztDgJePjrbttaefgdsiqeLWidjYz9BxXaTaZWxH1J95SHGk6tjE+dwgWILJoUZfA==}
+    engines: {node: '>=16'}
+    hasBin: true
 
   /popmotion@11.0.5:
     resolution: {integrity: sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA==}
