@@ -163,10 +163,16 @@ transition: fade-out
 - Zoho Desk
 - Dev, QA, Client Test
 
-
 ---
 layout: center
 transition: fade-out
 ---
 
 <span class="text-4xl">Make friends with <b class="text-green">ERRORS</b> <twemoji-beaming-face-with-smiling-eyes /></span>
+
+---
+layout: center
+transition: fade-out
+---
+
+<img src="/pic/ai.jpeg" class="mx-auto" />
